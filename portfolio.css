@@ -12,6 +12,8 @@ body{
 
 *{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     padding: 0;
     margin: 0;
 }
@@ -21,9 +23,9 @@ body{
 /* Navigation */
 .header{
     background-color: transparent;
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    top: 0;
+    top: 0; */
     z-index: 100;
 }
 
@@ -68,7 +70,6 @@ body{
         padding-left: 0;
         padding-right: 0;
         background-color: #000 !important;
-        width: screen;
     }
     .header_navbar{
         padding-bottom: 30px;
