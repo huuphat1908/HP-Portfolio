@@ -28,9 +28,7 @@ body{
 .header{
     background-color: transparent;
     z-index: 100;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
 }
 
 .header_navbar{
@@ -43,10 +41,9 @@ body{
 .header_NotOnTop{
     background-color: #fff !important;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
-
-.header_OnTop{
-    background-color: transparent !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
 }
 
 .navbar-brand-logo{
@@ -73,24 +70,38 @@ body{
     .header{
         padding-left: 0;
         padding-right: 0;
-        background-color: #000 !important;
+        background-color: #000;
+        position: absolute;
     }
+    
+    .header_NotOnTop{
+        background-color: #fff;
+        color: #000 !important;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        position: fixed !important;
+        top: 0;
+        left: 0;
+    }
+
     .header_navbar{
-        padding-bottom: 30px;
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .navbar-brand-logo{
-        color: white !important;
+        color: white;
         font-weight: 700;
     }
+
     .navbar-nav > .nav-item:hover{
         color: white
     }
+
     .navbar-nav > .nav-item > .nav-link{
         padding: 8px 0;
         color: white !important;
     }
+
     .navbar-toggler{
         background-color: white;
         border: 1px solid white;
@@ -237,8 +248,8 @@ body{
     font-weight: 600;
 }
 
-#about-section .about-section_description ul{
-    margin-bottom: 10px;
+#about-section .about-section_description ul li{
+    padding-top: 5px;
 }
 
 #about-section .about-section_description ul li span:first-of-type{
@@ -282,6 +293,10 @@ body{
 }
 
 @media only screen and (max-width: 768px) {
+    #about-section{
+        margin-bottom: 48px;
+    }
+
     #about-section .about-section_avatar{
         display: none;
     }
@@ -291,12 +306,16 @@ body{
         padding-left: 0;
     }
 
+    #about-section .about-section_description ul{
+        margin-bottom: 0;
+    }
+
     #about-section .about-section_description ul li{
-        padding-top: 8px;
+        padding-top: 12px;
     }
 
     #about-section .about-section_description .container-hobby{
-        padding-top: 0;
+        padding-top: 32px;
     }
 
     #about-section .about-section_description .container-hobby .hobby{
@@ -346,7 +365,7 @@ body{
 
 #skills-section .container .logo > img{
     width: 100%;
-    height: 100%;
+    height: 300px;
 }
 
 @media only screen and (max-width: 768px) {

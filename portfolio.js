@@ -34,8 +34,22 @@ function TransformBannerWhenPageLoad(){
     }
 }
 
+function ChangeBgColorNav(){
+    $(window).scroll(function(){
+        let header = $('.header');
+        let bannerOffsetTop = $('#home-section').offset().top;
+        let heighOfBanner = $('#home-section').outerHeight();
+        if ($(window).scrollTop() > (bannerOffsetTop + heighOfBanner)){
+            header.addClass('header_NotOnTop');
+        }
+        else
+            header.removeClass('header_NotOnTop');
+    })
+}
+
 $(document).ready(function(){
     ShowHideNavLinkBorder();
     TransformBannerWhenPageLoad();
     TransformBannerWhenReziseWindow();
+    ChangeBgColorNav();
 })
