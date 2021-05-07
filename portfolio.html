@@ -22,7 +22,7 @@
 
 <body data-spy="scroll" data-target=".header" data-offse="300">
     <!-- HEADER -->
-    <header class="container-fluid sticky-top header">
+    <header class="container-fluid header">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light header_navbar">
             <a class="navbar-brand navbar-brand-logo navbar-brand-logo-name" href="#">HỮU PHÁT</a>
@@ -48,11 +48,6 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services-section">
-                            <span>Services</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#projects-section">
                             <span>Projects</span>
                         </a>
@@ -60,11 +55,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#blog-section">
                             <span>Blog</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-section">
-                            <span>Contact</span>
                         </a>
                     </li>
                 </ul>
@@ -89,16 +79,17 @@
                 </p>
             </div>
         </section>
-    
+
         <!-- BODY -->
         <!-- About-section -->
         <section id="about-section" class="mt-5 container">
             <div class="row d-flex no-gutters">
                 <div class="col-xl-5 about-section_avatar"></div>
-                <div class="col-xl-7 col-sm-12 about-section_description d-flex flex-column justify-content-center">
+                <div class="col-xl-7 col-12 d-flex flex-column justify-content-center about-section_description">
                     <span class="subheading">My Intro</span>
                     <h2 class="mb-4">About me</h2>
-                    <p>I'm studying at University of Information Technology - Ho Chi Minh National Unviversity. My favorite
+                    <p>I'm studying at University of Information Technology - Ho Chi Minh National Unviversity. My
+                        favorite
                         programming language is Javascript and I'm want to be a full-stack Javascript developer.</p>
                     <ul class="mt-4">
                         <li class="d-flex">
@@ -121,39 +112,106 @@
                             <span>Phone:</span>
                             <span>0901349285</span>
                         </li>
-                        <div class="d-flex container-hobby align-items-center justify-content-between">
-                            <div class="hobby d-flex align-items-center justify-content-center">
-                                <div class="d-flex align-items-center justify-content-center icon-container">
-                                    <span class="flaticon-listening"></span>
-                                </div>
-                                <div class="text">Music</div>
+                    </ul>
+                    <div class="row d-flex align-items-center justify-content-center container-hobby">
+                        <div class="col-5 col-xl-3 hobby d-flex align-items-center pl-2">
+                            <div class="d-flex align-items-center justify-content-center icon-container">
+                                <span class="flaticon-listening"></span>
                             </div>
-                            <div class="hobby d-flex align-items-center justify-content-center">
-                                <div class="d-flex align-items-center justify-content-center icon-container">
-                                    <span class="flaticon-meeting"></span>
-                                </div>
-                                <div class="text">Hangout</div>
+                            <div class="text">Music</div>
+                        </div>
+                        <div class="col-5 col-xl-3 hobby d-flex align-items-center pl-2">
+                            <div class="d-flex align-items-center justify-content-center icon-container">
+                                <span class="flaticon-meeting"></span>
                             </div>
-                            <div class="hobby d-flex align-items-center justify-content-center">
-                                <div class="d-flex align-items-center justify-content-center icon-container">
-                                    <span class="flaticon-game-controller"></span>
-                                </div>
-                                <div class="text">Gaming</div>
+                            <div class="text">Hangout</div>
+                        </div>
+                        <div class="col-5 col-xl-3 hobby d-flex align-items-center pl-2">
+                            <div class="d-flex align-items-center justify-content-center icon-container">
+                                <span class="flaticon-game-controller"></span>
                             </div>
-                            <div class="hobby d-flex align-items-center justify-content-center">
-                                <div class="d-flex align-items-center justify-content-center icon-container">
-                                    <span class="flaticon-football"></span>
-                                </div>
-                                <div class="text">Football</div>
+                            <div class="text">Gaming</div>
+                        </div>
+                        <div class="col-5 col-xl-3 hobby d-flex align-items-center pl-2">
+                            <div class="d-flex align-items-center justify-content-center icon-container">
+                                <span class="flaticon-football"></span>
+                            </div>
+                            <div class="text">Football</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills-section -->
+        <section id="skills-section" class="bg-light">
+            <div class="container">
+                <div class="d-flex flex-column justify-content-center align-items-center pb-5">
+                    <span class="subheading">Skills</span>
+                    <h2 class="mb-4">My Skills</h2>
+                    <p>Font-end and back-end web with Javascript</p>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-4 mb-4">
+                        <div class="bg-white p-4 card">
+                            <h5 class="mb-2">HTML</h5>
+                            <span class="mb-4">Hyper text markup language</span>
+                            <div class="logo">
+                                <img src="./image/html.png" alt="Html logo">
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="bg-white p-4 card">
+                            <h5 class="mb-2">HTML</h5>
+                            <span class="mb-4">Hyper text markup language</span>
+                            <div class="logo">
+                                <img src="./image/css.jpg" alt="Html logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="bg-white p-4 card">
+                            <h5 class="mb-2">HTML</h5>
+                            <span class="mb-4">Hyper text markup language</span>
+                            <div class="logo">
+                                <img src="./image/javascript.png" alt="Html logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="bg-white p-4 card">
+                            <h5 class="mb-2">HTML</h5>
+                            <span class="mb-4">Hyper text markup language</span>
+                            <div class="logo">
+                                <img src="./image/reactjs.png" alt="Html logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="bg-white p-4 card">
+                            <h5 class="mb-2">HTML</h5>
+                            <span class="mb-4">Hyper text markup language</span>
+                            <div class="logo">
+                                <img src="./image/nodejs.png" alt="Html logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="bg-white p-4 card">
+                            <h5 class="mb-2">HTML</h5>
+                            <span class="mb-4">Hyper text markup language</span>
+                            <div class="logo">
+                                <img src="./image/axure.png" alt="Html logo">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </ul>
-            </div>
             </div>
         </section>
     </div>
 
+    <div class="cache"></div>
     <!-- Optional JavaScript -->
     <script src="./portfolio.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
