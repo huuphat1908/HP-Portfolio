@@ -34,6 +34,19 @@ function TransformBannerWhenPageLoad(){
     }
 }
 
+function TransformBannerWhenClickHambugerMenu(){
+    let hambugerMenu = $('.navbar-toggler');
+    hambugerMenu.click(function(){
+        setTimeout(function(){
+            let HeightOfNav = $('.header').outerHeight();
+            NotHeader = $('#NotHeader');
+            if (window.innerWidth < 768){
+            NotHeader.animate({ bottom: "500px"});      
+    }
+        }, 500);
+    });
+}
+
 function ChangeBgColorNav(){
     $(window).scroll(function(){
         let header = $('.header');
@@ -52,4 +65,5 @@ $(document).ready(function(){
     TransformBannerWhenPageLoad();
     TransformBannerWhenReziseWindow();
     ChangeBgColorNav();
+    TransformBannerWhenClickHambugerMenu();
 })

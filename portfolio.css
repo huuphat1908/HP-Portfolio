@@ -71,14 +71,15 @@ body{
         padding-left: 0;
         padding-right: 0;
         background-color: #000;
+        color: white;
         position: absolute;
     }
     
     .header_NotOnTop{
         background-color: #fff;
-        color: #000 !important;
+        color: #000;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-        position: fixed !important;
+        position: fixed;
         top: 0;
         left: 0;
     }
@@ -88,18 +89,14 @@ body{
         padding-right: 20px;
     }
 
-    .navbar-brand-logo{
-        color: white;
+    .header .header_navbar .navbar-brand-logo{
+        color: inherit;
         font-weight: 700;
     }
 
-    .navbar-nav > .nav-item:hover{
-        color: white
-    }
-
     .navbar-nav > .nav-item > .nav-link{
-        padding: 8px 0;
-        color: white !important;
+        padding: 12px 0;
+        color: inherit;
     }
 
     .navbar-toggler{
