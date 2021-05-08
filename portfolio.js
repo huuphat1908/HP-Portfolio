@@ -2,36 +2,25 @@ function ShowHideNavLinkBorder(){
     let navSpan = $('.navbar-nav > .nav-item > .nav-link > span');
     let navItem = $('.navbar-nav > .nav-item');
     navItem.mouseenter(function(){
-        $(this).children().children().addClass('showBorder');
-    })
+        $(this).children().children().addClass('show-border');
+    });
     navItem.mouseleave(function(){
-        $(this).children().children().removeClass('showBorder');
-    })
+        $(this).children().children().removeClass('show-border');
+    });
     navItem.click(function(){
-        $(this).children().children().addClass('showBorder');
-    })
-}
-
-function TransformBannerWhenReziseWindow(){
-    let HeightOfNav = $('.header').outerHeight();
-    let NotHeader = $('#NotHeader');
-    window.onresize = function(){
-        if (window.innerWidth < 768){
-            NotHeader.offset({ top: HeightOfNav});   
-        }
-        else
-        {
-            NotHeader.offset({ top: 0});
-        }
-    }
-}
-
-function TransformBannerWhenPageLoad(){
-    let HeightOfNav = $('.header').outerHeight();
-    let NotHeader = $('#NotHeader');
-    if (window.innerWidth < 768){
-        NotHeader.offset({ top: HeightOfNav});      
-    }
+        navSpan.removeClass('active');
+        $(this).children().children().addClass('active');
+    });
+    navItem.on('touchstart', function(){
+        $(this).children().children().addClass('show-border');
+    });
+    navItem.on('touchend', function(){
+        $(this).children().children().removeClass('show-border');
+    });
+    navItem.click(function(){
+        navSpan.removeClass('active');
+        $(this).children().children().addClass('active');
+    });
 }
 
 function ChangeBgColorNav(){
@@ -49,7 +38,5 @@ function ChangeBgColorNav(){
 
 $(document).ready(function(){
     ShowHideNavLinkBorder();
-    /* TransformBannerWhenPageLoad();
-    TransformBannerWhenReziseWindow(); */
     ChangeBgColorNav();
 })

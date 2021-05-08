@@ -6,6 +6,10 @@
     --special: #b1b493;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 16px;
@@ -66,6 +70,15 @@ body{
     position: relative;
 }
 
+.navbar-nav > .nav-item > .nav-link span.active{
+    color: var(--special);
+    border-bottom: 2px solid var(--special);
+}
+
+.navbar-nav > .nav-item > .nav-link > span.show-border{
+    border-bottom: 2px solid var(--special);
+}
+
 @media only screen and (max-width: 576px) {
     .header{
         padding-left: 0;
@@ -108,10 +121,6 @@ body{
         border: 1px solid white;
         font-size: 1rem;
     }
-}
-
-.navbar-nav > .nav-item > .nav-link > span.showBorder{
-    border-bottom: 2px solid var(--special);
 }
 
 /* Banner */
@@ -347,6 +356,16 @@ body{
 
 #skills-section .container .card{
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.3rem;
+    border: 0;
+}
+
+#skills-section .container .card:hover{
+    background-color: var(--special) !important;
+}
+
+#skills-section .container .card:hover span{
+    color: rgba(255, 255, 255, 0.8);
 }
 
 #skills-section .container .card h5{
