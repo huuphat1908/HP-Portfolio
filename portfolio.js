@@ -1,6 +1,6 @@
 function ShowHideNavLinkBorder(){
     let navSpan = $('.navbar-nav > .nav-item > .nav-link > span');
-    let navItem = $('.navbar-nav > .nav-item')
+    let navItem = $('.navbar-nav > .nav-item');
     navItem.mouseenter(function(){
         $(this).children().children().addClass('showBorder');
     })
@@ -8,7 +8,7 @@ function ShowHideNavLinkBorder(){
         $(this).children().children().removeClass('showBorder');
     })
     navItem.click(function(){
-        $(this).children().children().removeClass('showBorder');
+        $(this).children().children().addClass('showBorder');
     })
 }
 
@@ -34,19 +34,6 @@ function TransformBannerWhenPageLoad(){
     }
 }
 
-function TransformBannerWhenClickHambugerMenu(){
-    let hambugerMenu = $('.navbar-toggler');
-    hambugerMenu.click(function(){
-        setTimeout(function(){
-            let HeightOfNav = $('.header').outerHeight();
-            NotHeader = $('#NotHeader');
-            if (window.innerWidth < 768){
-            NotHeader.animate({ bottom: "500px"});      
-    }
-        }, 500);
-    });
-}
-
 function ChangeBgColorNav(){
     $(window).scroll(function(){
         let header = $('.header');
@@ -62,8 +49,7 @@ function ChangeBgColorNav(){
 
 $(document).ready(function(){
     ShowHideNavLinkBorder();
-    TransformBannerWhenPageLoad();
-    TransformBannerWhenReziseWindow();
+    /* TransformBannerWhenPageLoad();
+    TransformBannerWhenReziseWindow(); */
     ChangeBgColorNav();
-    TransformBannerWhenClickHambugerMenu();
 })
