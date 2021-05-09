@@ -1,32 +1,21 @@
 function ScrollOffsetTop(){
     $('html, body').animate({scrollTop: $('#home-section').offset().top}, 'slow');
-    /* $('html, body').animate({scrollTop: $('#about-section').offset().top}, 'slow');
-    $('html, body').animate({scrollTop: $('#skills-section').offset().top}, 'slow'); */
+    $('html, body').animate({scrollTop: $('#about-section').offset().top}, 'slow');
+    $('html, body').animate({scrollTop: $('#skills-section').offset().top}, 'slow');
 }
 
 function ShowHideNavLinkBorder(){
-    let navSpan = $('.navbar-nav > .nav-item > .nav-link > span');
-    let navItem = $('.navbar-nav > .nav-item');
-    navItem.mouseenter(function(){
-        $(this).children().children().addClass('show-border');
+    let navLink = $('.navbar-nav > .nav-item > .nav-link');
+    navLink.on('event', function() {
+        $(this).addClass('active').trigger('classChange');
     });
-    navItem.mouseleave(function(){
-        $(this).children().children().removeClass('show-border');
+    
+    // in another js file, far, far away
+    navLink.on('classChange', function() {
+        $(this).children().css('border-color', '#b1b493');
+        console.log('A')
     });
-    navItem.click(function(){
-        navSpan.removeClass('active');
-        $(this).children().children().addClass('active');
-    });
-    navItem.on('touchstart', function(){
-        $(this).children().children().addClass('show-border');
-    });
-    navItem.on('touchend', function(){
-        $(this).children().children().removeClass('show-border');
-    });
-    navItem.click(function(){
-        navSpan.removeClass('active');
-        $(this).children().children().addClass('active');
-    });
+    
 }
 
 function ChangeBgColorNav(){

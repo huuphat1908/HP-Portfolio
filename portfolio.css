@@ -66,17 +66,16 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     opacity: 1 !important;
-    color: #000;
     position: relative;
+    color: #000;
 }
 
-.navbar-nav > .nav-item > .nav-link span.active{
+.navbar-nav > .nav-item > .nav-link.active{
     color: var(--special);
-    border-bottom: 2px solid var(--special);
 }
 
-.navbar-nav > .nav-item > .nav-link > span.show-border{
-    border-bottom: 2px solid var(--special);
+.navbar-nav > .nav-item > .nav-link span{
+    border-bottom: 2px solid transparent;
 }
 
 @media only screen and (max-width: 576px) {
@@ -109,10 +108,6 @@ body{
 
     .navbar-nav > .nav-item > .nav-link{
         padding: 12px 0;
-        color: inherit;
-    }
-
-    .navbar-nav > .nav-item > .nav-link:hover{
         color: inherit;
     }
 
@@ -231,7 +226,7 @@ body{
 
 /* About section */
 #about-section .about-section_avatar{
-    background-image: url(./Image/ava_formal.jpg);
+    background-image: url(./image/ava_formal.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 520px;
