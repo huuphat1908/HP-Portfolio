@@ -94,6 +94,8 @@ body{
         position: fixed;
         top: 0;
         left: 0;
+        transition: 0.5s all ease-out;
+        /* margin-top: -130px; */
     }
 
     .header_navbar{

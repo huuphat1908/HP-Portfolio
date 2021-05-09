@@ -1,6 +1,5 @@
 function ScrollOffsetTop(){
     let navLink = $('.navbar-nav > .nav-item > .nav-link');
-    let headerHeight = $('.header').outerHeight();
     navLink.click(function(){
         let section =  $(this).attr('href');
         /* if (section == '#about-section')
@@ -28,13 +27,20 @@ function ShowHideNavLinkBorder(){
 function StickyNav(){
     $(window).scroll(function(){
         let header = $('.header');
+        let fakeHeaderNav = $('#fake-header-nav');
         let bannerOffsetTop = $('#home-section').offset().top;
+        console.log(bannerOffsetTop);
         let heighOfBanner = $('#home-section').outerHeight();
         if ($(window).scrollTop() > (bannerOffsetTop + heighOfBanner - header.outerHeight() - 5)){
             header.addClass('header_NotOnTop');
+            fakeHeaderNav.css('height', '69');
+            console.log(bannerOffsetTop);
         }
-        else
+        else{
             header.removeClass('header_NotOnTop');
+            fakeHeaderNav.css('height', '0');
+            console.log(bannerOffsetTop);
+        }
     })
 }
 
