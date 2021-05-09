@@ -225,6 +225,10 @@ body{
                             /* BODY */
 
 /* About section */
+#about-section{
+    padding-top: 3rem;
+}
+
 #about-section .about-section_avatar{
     background-image: url(./image/ava_formal.jpg);
     background-repeat: no-repeat;

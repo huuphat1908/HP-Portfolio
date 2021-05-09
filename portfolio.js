@@ -1,7 +1,14 @@
 function ScrollOffsetTop(){
-    $('html, body').animate({scrollTop: $('#home-section').offset().top}, 'slow');
-    $('html, body').animate({scrollTop: $('#about-section').offset().top}, 'slow');
-    $('html, body').animate({scrollTop: $('#skills-section').offset().top}, 'slow');
+    let navLink = $('.navbar-nav > .nav-item > .nav-link');
+    let headerHeight = $('.header').outerHeight();
+    navLink.click(function(){
+        let section =  $(this).attr('href');
+        /* if (section == '#about-section')
+            $('html, body').animate({scrollTop: $(section).offset().top}, 200);
+        else */
+            $('html, body').animate({scrollTop: $(section).offset().top - 69}, 200);
+    });
+    $('body').offset($('body').scrollspy({target: ".header", offset: 69}));
 }
 
 function ShowHideNavLinkBorder(){
@@ -18,12 +25,12 @@ function ShowHideNavLinkBorder(){
     
 }
 
-function ChangeBgColorNav(){
+function StickyNav(){
     $(window).scroll(function(){
         let header = $('.header');
         let bannerOffsetTop = $('#home-section').offset().top;
         let heighOfBanner = $('#home-section').outerHeight();
-        if ($(window).scrollTop() > (bannerOffsetTop + heighOfBanner)){
+        if ($(window).scrollTop() > (bannerOffsetTop + heighOfBanner - header.outerHeight() - 5)){
             header.addClass('header_NotOnTop');
         }
         else
@@ -58,7 +65,7 @@ function AnimationSkillCard(){
 $(document).ready(function(){
     ScrollOffsetTop();
     ShowHideNavLinkBorder();
-    ChangeBgColorNav();
+    StickyNav();
     AnimationDownloadCVButton();
     AnimationSkillCard();
 })
