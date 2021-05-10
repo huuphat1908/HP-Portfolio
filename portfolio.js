@@ -2,12 +2,8 @@ function ScrollOffsetTop(){
     let navLink = $('.navbar-nav > .nav-item > .nav-link');
     navLink.click(function(){
         let section =  $(this).attr('href');
-        /* if (section == '#about-section')
-            $('html, body').animate({scrollTop: $(section).offset().top}, 200);
-        else */
-            $('html, body').animate({scrollTop: $(section).offset().top - 69}, 200);
+        $('html, body').animate({scrollTop: $(section).offset().top - 69}, 200);
     });
-    $('body').offset($('body').scrollspy({target: ".header", offset: 69}));
 }
 
 function ShowHideNavLinkBorder(){
@@ -29,17 +25,18 @@ function StickyNav(){
         let header = $('.header');
         let fakeHeaderNav = $('#fake-header-nav');
         let bannerOffsetTop = $('#home-section').offset().top;
-        console.log(bannerOffsetTop);
         let heighOfBanner = $('#home-section').outerHeight();
-        if ($(window).scrollTop() > (bannerOffsetTop + heighOfBanner - header.outerHeight() - 5)){
+        if ($(window).scrollTop() > (bannerOffsetTop + heighOfBanner - header.outerHeight() - 1)){
             header.addClass('header_NotOnTop');
-            fakeHeaderNav.css('height', '69');
-            console.log(bannerOffsetTop);
+            if ($(window).width() < 768){
+                fakeHeaderNav.css('height', '69');
+            }
         }
         else{
             header.removeClass('header_NotOnTop');
-            fakeHeaderNav.css('height', '0');
-            console.log(bannerOffsetTop);
+            if ($(window).width() < 768){
+                fakeHeaderNav.css('height', '0');
+            }
         }
     })
 }
