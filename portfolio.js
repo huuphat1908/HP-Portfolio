@@ -12,15 +12,21 @@ function StickyNav(){
         let fakeHeaderNav = $('#fake-header-nav');
         let bannerOffsetTop = $('#home-section').offset().top;
         let heighOfBanner = $('#home-section').outerHeight();
-        if ($(window).scrollTop() > (bannerOffsetTop + heighOfBanner - header.outerHeight() - 1)){
-            header.addClass('header_NotOnTop');
+        if ($(window).scrollTop() > 70){
+            header.addClass('header_scroll');
             if ($(window).width() < 768){
                 fakeHeaderNav.css('height', '69');
             }
         }
         else{
-            header.removeClass('header_NotOnTop');
+            header.removeClass('header_scroll');
             fakeHeaderNav.css('height', '0');
+        }
+        if ($(window).scrollTop() > (bannerOffsetTop + heighOfBanner - header.outerHeight() - 1)){
+            header.addClass('header_NotOnTop');
+        }
+        else{
+            header.removeClass('header_NotOnTop');
         }
     });
 }
