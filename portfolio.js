@@ -6,20 +6,6 @@ function ScrollOffsetTop(){
     });
 }
 
-function ShowHideNavLinkBorder(){
-    let navLink = $('.navbar-nav > .nav-item > .nav-link');
-    navLink.on('event', function() {
-        $(this).addClass('active').trigger('classChange');
-    });
-    
-    // in another js file, far, far away
-    navLink.on('classChange', function() {
-        $(this).children().css('border-color', '#b1b493');
-        console.log('A')
-    });
-    
-}
-
 function StickyNav(){
     $(window).scroll(function(){
         let header = $('.header');
@@ -34,11 +20,9 @@ function StickyNav(){
         }
         else{
             header.removeClass('header_NotOnTop');
-            if ($(window).width() < 768){
-                fakeHeaderNav.css('height', '0');
-            }
+            fakeHeaderNav.css('height', '0');
         }
-    })
+    });
 }
 
 function AnimationDownloadCVButton(){
@@ -67,7 +51,6 @@ function AnimationSkillCard(){
 
 $(document).ready(function(){
     ScrollOffsetTop();
-    ShowHideNavLinkBorder();
     StickyNav();
     AnimationDownloadCVButton();
     AnimationSkillCard();
