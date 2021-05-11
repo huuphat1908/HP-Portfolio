@@ -542,6 +542,7 @@ body{
     background-color: var(--special);
     padding: 7em 0;
     position: relative;
+    text-align: center;
 }
 
 #study-section .container .subheading{
@@ -561,4 +562,23 @@ body{
 
 #study-section .container p{
     color: rgba(255,255,255, 0.9);
+}
+
+#study-section .container .row .carousel-indicators{
+    position: static;
+}
+
+#study-section .container .row .carousel-indicators > li{
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255, 0.7);
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: rgba(255,255,255, 0.1);
+
+}
+
+#study-section .container .row .carousel-indicators > li.active{
+    background-color: #fff;
+    border: none;
 }
