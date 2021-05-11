@@ -55,6 +55,8 @@ function AnimationSkillCard(){
     });
 }
 
+
+
 $(document).ready(function(){
     ScrollOffsetTop();
     StickyNav();
