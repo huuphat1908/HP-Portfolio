@@ -462,9 +462,9 @@ body{
     height: 300px;
     position: relative;
     border-radius: 5px;
-    background-image: url(./image/logo.svg);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 } 
 
@@ -521,5 +521,18 @@ body{
     
     #projects-section .container-fluid .row .col-lg-3{
         margin-bottom: 10px;
+    }
+
+    #projects-section .container-fluid .row .card .overlay{
+        opacity: 0.2;
+        z-index: inherit;
+    }
+
+    #projects-section .container-fluid .row .card .inner-text{
+        z-index: 10;
+    }
+
+    #projects-section .container-fluid .row .inner-text > span{
+        color: rgba(255,255,255, 0.8);
     }
 }
