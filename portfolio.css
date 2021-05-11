@@ -536,3 +536,29 @@ body{
         color: rgba(255,255,255, 0.8);
     }
 }
+
+/* Study section */
+#study-section{
+    background-color: var(--special);
+    padding: 7em 0;
+    position: relative;
+}
+
+#study-section .container .subheading{
+    color: rgba(255,255,255, 0.9);
+    text-transform: uppercase;
+    font-size: 13;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+#study-section .container h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#study-section .container p{
+    color: rgba(255,255,255, 0.9);
+}
