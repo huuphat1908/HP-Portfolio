@@ -436,6 +436,7 @@ body{
 #projects-section{
     padding: 7em 0;
     text-align: center;
+    margin-top: -1px;
 }
 
 #projects-section > .container-fluid span.subheading{
@@ -576,8 +577,18 @@ body{
     padding: 1rem 1.5rem;
 }
 
+/* #study-section .container .row #carouselSchool{
+    width: 100%;
+} */
+
 #study-section .container .row #carouselSchool .carousel-item .card{
+    border-radius: 10px;
     width: 350px;
+    height: 500px;
+}
+
+#study-section .container .row #carouselSchool .carousel-item .card-img-top{
+    height: 350px;
 }
 
 #study-section .container .row #carouselSchool .carousel-item .card-title{
@@ -608,6 +619,16 @@ body{
 #study-section .container .row .carousel-indicators > li.active{
     background-color: #fff;
     border: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #study-section .container .row #carouselSchool .carousel-item .card{
+        width: 330px;
+    }
+
+    #study-section .container .row #carouselSchool .carousel-item .card-img-top{
+        height: 330px;
+    }
 }
 
                             /* FOOTER */

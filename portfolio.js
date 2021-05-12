@@ -62,5 +62,4 @@ $(document).ready(function(){
     StickyNav();
     AnimationDownloadCVButton();
     AnimationSkillCard();
-    $('.carousel').carousel('pause');
 })
