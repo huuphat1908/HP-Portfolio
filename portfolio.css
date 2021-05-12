@@ -564,6 +564,14 @@ body{
     color: rgba(255,255,255, 0.9);
 }
 
+#study-section .container .btn{
+    color: var(--special);
+    box-shadow: 0px 24px 36px -18px rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+}
+
 #study-section .container .row .carousel-indicators{
     position: static;
 }
