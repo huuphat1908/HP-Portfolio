@@ -576,6 +576,21 @@ body{
     padding: 1rem 1.5rem;
 }
 
+#study-section .container .row #carouselSchool .carousel-item .card{
+    width: 350px;
+}
+
+#study-section .container .row #carouselSchool .carousel-item .card-title{
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+}
+
+#study-section .container .row #carouselSchool .carousel-item .card-text{
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
 #study-section .container .row .carousel-indicators{
     position: static;
 }
@@ -583,8 +598,8 @@ body{
 #study-section .container .row .carousel-indicators > li{
     border-radius: 50%;
     border: 1px solid rgba(255,255,255, 0.7);
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     margin: 5px;
     background-color: rgba(255,255,255, 0.1);
 
