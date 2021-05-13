@@ -577,18 +577,27 @@ body{
     padding: 1rem 1.5rem;
 }
 
-/* #study-section .container .row #carouselSchool{
+#study-section .container .row #carouselSchool{
     width: 100%;
+}
+
+/* #study-section .container .row #carouselSchool .carousel-item{
+    margin-right: 0;
+    display: flex;
 } */
 
 #study-section .container .row #carouselSchool .carousel-item .card{
-    border-radius: 10px;
-    width: 350px;
-    height: 500px;
+    border-radius: 7px;
+    height: 450px;
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-flex;
+    margin-left: 14px;
+    margin-right: 14px;
 }
 
 #study-section .container .row #carouselSchool .carousel-item .card-img-top{
-    height: 350px;
+    height: 300px;
 }
 
 #study-section .container .row #carouselSchool .carousel-item .card-title{
@@ -621,13 +630,42 @@ body{
     border: none;
 }
 
+#carouselSchool .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+}
+
+#carouselSchool .carousel-inner .active .left{
+    left: -33%;
+}
+
+#carouselSchool .carousel-inner .active .right{
+    left: 33%;
+}
+
+#carouselSchool .carousel-inner .next{
+    left: 33%;
+}
+
+#carouselSchool .carousel-inner .prev{
+    left: -33%;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    #carouselSchool .carousel-inner .item{
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     #study-section .container .row #carouselSchool .carousel-item .card{
-        width: 330px;
+        height: 400px;
     }
 
     #study-section .container .row #carouselSchool .carousel-item .card-img-top{
-        height: 330px;
+        height: 270px;
     }
 }
 
