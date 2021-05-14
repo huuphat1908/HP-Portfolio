@@ -582,13 +582,12 @@ body{
 }
 
 /* #study-section .container .row #carouselSchool .carousel-item{
-    margin-right: 0;
-    display: flex;
+    height: 450px;
 } */
 
 #study-section .container .row #carouselSchool .carousel-item .card{
     border-radius: 7px;
-    height: 450px;
+    height: 480px;
     padding-left: 0;
     padding-right: 0;
     display: inline-flex;
@@ -598,6 +597,8 @@ body{
 
 #study-section .container .row #carouselSchool .carousel-item .card-img-top{
     height: 300px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 #study-section .container .row #carouselSchool .carousel-item .card-title{
@@ -640,14 +641,6 @@ body{
 
 #carouselSchool .carousel-inner .active .right{
     left: 33%;
-}
-
-#carouselSchool .carousel-inner .next{
-    left: 33%;
-}
-
-#carouselSchool .carousel-inner .prev{
-    left: -33%;
 }
 
 @media all and (transform-3d), (-webkit-transform-3d) {
