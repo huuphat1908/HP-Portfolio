@@ -73,6 +73,10 @@ function MakeThreeFrameInCarousel() {
 }
 
 $(document).ready(function () {
+    $('body').scrollspy({
+        target: '#header',
+        offset: 69 
+    });
     ScrollOffsetTop();
     StickyNav();
     AnimationDownloadCVButton();
