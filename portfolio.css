@@ -296,7 +296,7 @@ body{
 
 #about-section .about-section_description ul li span:last-of-type{
     color: var(--special);
-    font-weight: 600;
+    font-weight: 500;
     padding-left: 0;
     width: calc(100% - 130px);
 }
@@ -352,10 +352,6 @@ body{
         padding-top: 12px;
     }
 
-    #about-section .about-section_description ul li span:last-of-type{
-        font-weight: 500;
-    }
-
     #about-section .about-section_description .container-hobby{
         padding-top: 48px;
     }
@@ -393,7 +389,7 @@ body{
 }
 
 #skills-section .container .card:hover, #skills-section .container .card.hover{
-    background-color: var(--special) !important;
+    background-color: #343a40 !important;
 }
 
 #skills-section .container .card:hover h5, #skills-section .container .card h5.hover{

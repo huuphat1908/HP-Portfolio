@@ -73,13 +73,10 @@ function MakeThreeFrameInCarousel() {
 }
 
 $(document).ready(function () {
-    $('body').scrollspy({
-        target: '#header',
-        offset: 69 
-    });
+    AOS.init();
     ScrollOffsetTop();
     StickyNav();
     AnimationDownloadCVButton();
     AnimationSkillCard();
     MakeThreeFrameInCarousel();
-})
+});

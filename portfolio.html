@@ -15,16 +15,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Loading page CSS -->
     <link rel="stylesheet" href="./portfolio.css">
-    <link rel="stylesheet" href="./Flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="./Flaticon/font/flaticon.css"> <!-- Flaticon CSS -->
+    <link href="./aos_scroll/aos.css" rel="stylesheet"> <!-- On scroll animation -->
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body data-spy="scroll">
+<body data-spy="scroll" data-target=".header" data-offset="68">
     <!-- HEADER -->
     <div id="fake-home-section">
         <div id="fake-header-nav"></div>
-        <header class="container-fluid header" id="header">
+        <header class="container-fluid header">
             <!-- Navigation -->
             <nav class="navbar navbar-expand-lg bg-light header_navbar navbar-light">
                 <a class="navbar-brand navbar-brand-logo" href="#">HỮU PHÁT</a>
@@ -67,7 +68,7 @@
 
     <!-- Banner -->
     <section class="container-fluid" id="home-section">
-        <div class="banner-text">
+        <div class="banner-text" data-aos="fade-up">
             <span class="banner-text_subheading">
                 Hello! I'm Hữu Phát
             </span>
@@ -89,12 +90,12 @@
         <div class="row d-flex no-gutters">
             <div class="col-xl-5 about-section_avatar"></div>
             <div class="col-xl-7 col-12 d-flex flex-column justify-content-center about-section_description">
-                <span class="subheading">My Intro</span>
-                <h2 class="mb-4">About me</h2>
-                <p>I'm studying at University of Information Technology - Ho Chi Minh National Unviversity. My
+                <span class="subheading" data-aos="fade-up">My Intro</span>
+                <h2 class="mb-4" data-aos="fade-up">About me</h2>
+                <p data-aos="fade-up">I'm studying at University of Information Technology - Ho Chi Minh National Unviversity. My
                     favorite
                     programming language is Javascript and I'm want to be a full-stack Javascript developer.</p>
-                <ul class="mt-4">
+                <ul class="mt-4" data-aos="fade-up">
                     <li class="d-flex">
                         <span>Name:</span>
                         <span>Nguyễn Hữu Phát</span>
@@ -116,7 +117,7 @@
                         <span>0901349285</span>
                     </li>
                 </ul>
-                <div class="row d-flex align-items-center justify-content-center container-hobby">
+                <div class="row d-flex align-items-center justify-content-center container-hobby" data-aos="fade-up">
                     <div class="col-5 col-xl-3 hobby d-flex align-items-center pl-2">
                         <div class="d-flex align-items-center justify-content-center icon-container">
                             <span class="flaticon-listening"></span>
@@ -154,7 +155,7 @@
                 <h2 class="mb-4">My Skills</h2>
                 <p>Font-end and back-end web with Javascript</p>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5" data-aos="fade-up">
                 <div class="col-lg-4 mb-4">
                     <div class="bg-white p-4 card">
                         <h5 class="mb-2">HTML</h5>
@@ -164,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
                     <div class="bg-white p-4 card">
                         <h5 class="mb-2">CSS</h5>
                         <span class="mb-4">Cascading Style Sheets</span>
@@ -173,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
                     <div class="bg-white p-4 card">
                         <h5 class="mb-2">Javascript</h5>
                         <span class="mb-4">Programming Language</span>
@@ -182,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
                     <div class="bg-white p-4 card">
                         <h5 class="mb-2">ReactJS</h5>
                         <span class="mb-4">JavaScript Library For Font-end</span>
@@ -191,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
                     <div class="bg-white p-4 card">
                         <h5 class="mb-2">NodeJS</h5>
                         <span class="mb-4">JavaScript Runtime</span>
@@ -200,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
                     <div class="bg-white p-4 card">
                         <h5 class="mb-2">Axure</h5>
                         <span class="mb-4">UX Design Tool</span>
@@ -217,13 +218,13 @@
     <div id="projects-section">
         <div class="container-fluid">
             <div class="d-flex flex-column justify-content-center align-items-center pb-5">
-                <span class="subheading">Accomplishments</span>
-                <h2 class="mb-4">My projects</h2>
-                <p>Try to build a fast web app, Javascript can do it with asynchronous functions. Contact me for work!
+                <span class="subheading" data-aos="fade-up">Accomplishments</span>
+                <h2 class="mb-4" data-aos="fade-up">My projects</h2>
+                <p data-aos="fade-up">Try to build a fast web app, Javascript can do it with asynchronous functions. Contact me for work!
                 </p>
             </div>
             <div class="row mb-5">
-                <div class="col-lg-3">
+                <div class="col-lg-3" data-aos="fade-up">
                     <div class="card d-flex align-items-center justify-content-center"
                         style="background-image: url(./image/watchkingdom-project.svg);">
                         <div class="overlay"></div>
@@ -235,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3" data-aos="fade-up">
                     <div class="card d-flex align-items-center justify-content-center"
                         style="background-image: url(./image/portfolio-project.jpg);">
                         <div class="overlay"></div>
@@ -332,7 +333,7 @@
                 <h2 class="mb-4">Let's talk</h2>
                 <p class="mb-4">If you want to work with me or just want to know more about me, don't hestitate to
                     contact me.</p>
-                <div class="social-icon-container d-flex">
+                <div class="social-icon-container d-flex" data-aos="fade-up">
                     <a href="https://www.facebook.com/huuphat1908/">
                         <img src="./image/facebook.webp" alt="facebook">
                     </a>
@@ -358,6 +359,7 @@
 
     <!-- Optional JavaScript -->
     <script src="./portfolio.js"></script>
+    <script src="./aos_scroll/aos.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
