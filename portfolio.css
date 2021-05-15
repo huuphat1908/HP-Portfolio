@@ -550,6 +550,10 @@ body{
     text-align: center;
 }
 
+#study-section .container{
+    width: 100%;
+}
+
 #study-section .container .subheading{
     color: rgba(255,255,255, 0.9);
     text-transform: uppercase;
@@ -581,18 +585,14 @@ body{
     width: 100%;
 }
 
-/* #study-section .container .row #carouselSchool .carousel-item{
-    height: 450px;
-} */
+#study-section .container .row #carouselSchool .carousel-item > .col-xl-4{
+    display: inline-flex;
+    width: calc(33.33% - 5px);
+}
 
 #study-section .container .row #carouselSchool .carousel-item .card{
     border-radius: 7px;
     height: 480px;
-    padding-left: 0;
-    padding-right: 0;
-    display: inline-flex;
-    margin-left: 14px;
-    margin-right: 14px;
 }
 
 #study-section .container .row #carouselSchool .carousel-item .card-img-top{
@@ -631,9 +631,9 @@ body{
     border: none;
 }
 
-#carouselSchool .carousel-inner > .item {
+/* #carouselSchool .carousel-inner > .carousel-item {
     transition: 500ms ease-in-out left;
-}
+} */
 
 #carouselSchool .carousel-inner .active .left{
     left: -33%;
@@ -643,18 +643,33 @@ body{
     left: 33%;
 }
 
-@media all and (transform-3d), (-webkit-transform-3d) {
-    #carouselSchool .carousel-inner .item{
+/* @media all and (transform-3d), (-webkit-transform-3d) {
+    #carouselSchool .carousel-inner > .carousel-item{
         transition: 500ms ease-in-out left;
         transition: 500ms ease-in-out all;
         backface-visibility: visible;
-        transform: none!important;
+        transform: none !important;
     }
-}
+} */
 
 @media only screen and (max-width: 768px) {
+    #study-section .container .row #carouselSchool > .carousel-inner{
+        text-align: center;
+        display: block;
+    }
+
+    #study-section .container .row #carouselSchool .carousel-item.active{
+        margin-left: auto;
+        display: inline-block;
+    }
+
+    #study-section .container .row #carouselSchool .carousel-item > .col-xl-4{
+        width: 100%;
+    }
+
     #study-section .container .row #carouselSchool .carousel-item .card{
         height: 400px;
+        width: 100%;
     }
 
     #study-section .container .row #carouselSchool .carousel-item .card-img-top{
