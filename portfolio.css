@@ -434,7 +434,7 @@ body{
 }
 
 /* Projects section */
-#projects-section{
+/* #projects-section{
     padding: 7em 0;
     text-align: center;
 }
@@ -540,7 +540,7 @@ body{
     #projects-section .container-fluid .row .inner-text > span{
         color: rgba(255,255,255, 0.8);
     }
-}
+} */
 
 /* Study section */
 #study-section{
