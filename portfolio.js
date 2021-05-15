@@ -42,7 +42,7 @@ function AnimationDownloadCVButton() {
 }
 
 function AnimationSkillCard() {
-    let card = $('#skills-section .container .card');
+    /* let card = $('#skills-section .container .card');
     card.on('touchstart', function () {
         $(this).addClass('hover');
         $(this).find('h5').addClass('hover');
@@ -52,7 +52,7 @@ function AnimationSkillCard() {
         $(this).removeClass('hover');
         $(this).find('h5').removeClass('hover');
         $(this).find('span').removeClass('hover');
-    });
+    }); */
 }
 
 function MakeThreeFrameInCarousel() {
