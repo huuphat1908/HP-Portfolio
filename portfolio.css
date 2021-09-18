@@ -384,18 +384,6 @@ body{
     border: 0;
 }
 
-#skills-section .container .card:hover, #skills-section .container .card.hover{
-    background-color: #343a40 !important;
-}
-
-#skills-section .container .card:hover h5, #skills-section .container .card h5.hover{
-    color: #fff;
-}
-
-#skills-section .container .card:hover span, #skills-section .container .card span.hover{
-    color: rgba(255, 255, 255, 0.8);
-}
-
 #skills-section .container .card h5{
     color: rgba(0, 0, 0, 0.9);
     font-weight: 900 !important;
