@@ -559,64 +559,7 @@ body{
     font-size: 14px;
     font-weight: 500;
     padding: 1rem 1.5rem;
-}
-
-#study-section .container .row #carouselSchool{
-    width: 100%;
-}
-
-#study-section .container .row #carouselSchool .carousel-item > .col-xl-4{
-    display: inline-flex;
-    width: calc(33.33% - 5px);
-}
-
-#study-section .container .row #carouselSchool .carousel-item .card{
-    border-radius: 7px;
-    height: 480px;
-}
-
-#study-section .container .row #carouselSchool .carousel-item .card-img-top{
-    height: 300px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-}
-
-#study-section .container .row #carouselSchool .carousel-item .card-title{
-    font-weight: 600;
-    font-size: 18px;
-    color: #000;
-}
-
-#study-section .container .row #carouselSchool .carousel-item .card-text{
-    font-size: 16px;
-    color: #b3b3b3;
-}
-
-#study-section .container .row .carousel-indicators{
-    position: static;
-}
-
-#study-section .container .row .carousel-indicators > li{
-    border-radius: 50%;
-    border: 1px solid rgba(255,255,255, 0.7);
-    width: 12px;
-    height: 12px;
-    margin: 5px;
-    background-color: rgba(255,255,255, 0.1);
-
-}
-
-#study-section .container .row .carousel-indicators > li.active{
-    background-color: #fff;
-    border: none;
-}
-
-#carouselSchool .carousel-inner .active .left{
-    left: -33%;
-}
-
-#carouselSchool .carousel-inner .active .right{
-    left: 33%;
+    border-radius: 4px;
 }
 
 @media only screen and (max-width: 768px) {
